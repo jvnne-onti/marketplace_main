@@ -1,0 +1,59 @@
+{% extends 'store/base.html' %}
+
+{% block title %}Contacto | {% endblock %}
+
+{% block content %}
+<!-- Sección de Contacto -->
+<div class="container py-5">
+    <h1 class="text-center mb-4">Contacto</h1>
+    
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg">
+                <div class="card-body">
+                    <h3 class="card-title text-center">¡Ponte en contacto con nosotros!</h3>
+                    <form action="#" method="POST">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre Completo</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Tu correo electrónico" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje" required></textarea>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Información de contacto adicional -->
+<div class="container mt-5">
+    <div class="row text-center">
+        <div class="col-md-4">
+            <h4>Dirección</h4>
+            <p>Calle Ficticia 123, Ciudad, País</p>
+        </div>
+        <div class="col-md-4">
+            <h4>Teléfono</h4>
+            <p>(+123) 456 7890</p>
+        </div>
+        <div class="col-md-4">
+            <h4>Correo Electrónico</h4>
+            <p>contacto@tuempresa.com</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
